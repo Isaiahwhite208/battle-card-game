@@ -26,8 +26,6 @@
 <style scoped lang="scss">
   input[type=text] {
     display: flex;
-    align-items: center;
-    justify-content: center;
     background: transparent;
     border: none;
     border-bottom: 1px solid #5c5c5c;
@@ -39,15 +37,11 @@
 
   input:focus {
     display: flex;
-    align-items: center;
-    justify-content: center;
     outline: #5684c0;
   }
 
   .new-game-button {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 1rem;
     background-color: #424242;
     border-radius: 10px;
