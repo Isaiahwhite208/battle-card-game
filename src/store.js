@@ -48,7 +48,6 @@ export default new Vuex.Store({
       commit('setEnemyCard', clickedCard)
     },
     afterAttack({ commit, dispatch }, data) {
-
       gameApi.put(data.gameId, data.fightingCards)
         .then(res => {
           return gameApi.get(data.gameId)

@@ -11,9 +11,7 @@
 </template>
 
 <script>
-
   import card from './Card.vue'
-
   export default {
     name: "PlayersCards",
     data() {

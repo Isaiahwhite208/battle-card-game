@@ -13,7 +13,6 @@
   export default {
     name: "",
     props: ["card", "visible"],
-
     methods: {
       active() {
         if (this.playerCardId == this.card.id || this.enemyCardId == this.card.id) {
@@ -30,7 +29,6 @@
       }
     }
   };
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
