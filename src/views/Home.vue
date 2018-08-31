@@ -15,8 +15,8 @@
 </template>
 
 <script>
-  import playerHand from '@/components/playerHand.vue'
-  import enemyHand from '@/components/enemyHand.vue'
+  import playerHand from '@/components/Player.vue'
+  import enemyHand from '@/components/Opponent.vue'
 
   export default {
     name: 'home',

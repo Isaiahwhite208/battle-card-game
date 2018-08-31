@@ -4,7 +4,7 @@
     <div class="player-hand" v-else>
       <h4>Player: {{player.name}}</h4>
       <div class="row content-center">
-        <card class="card-size" v-for="hand in player.hand" :card="hand" :visible="true" @click.native="selectCard(hand.id)" :key="hand.id"></card>
+        <card class="card-size" v-for="hand in player.hand" :card="hand" :visible="true" @click.native="selectedCard(hand.id)" :key="hand.id"></card>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
       card
     },
     methods: {
-      selectCard(cardId) {
+      selectedCard(cardId) {
         this.$store.dispatch('updatePlayerCard', { playerId: this.player.id, playerCardId: cardId })
         console.log(cardId)
       }
@@ -44,7 +44,7 @@
     text-align: center;
   }
 
-  .selectCard {
+  .selectedCard {
     background-color: gray;
     margin: 1%;
     border: 2px solid blue;
