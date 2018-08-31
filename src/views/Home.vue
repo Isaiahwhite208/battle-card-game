@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home container-fluid">
     <h2>Welcome to BATTLECARDS!</h2>
     <form @submit.prevent="startGame">
       Player:<input type="text" v-model="newGame.playerName"> Select Deck:<input type="number" min='1' max='4' v-model="newGame.set">
@@ -51,6 +51,8 @@
 </script>
 <style scoped>
   .home {
+    /* display: flex;
+    justify-content: space-between; */
     background-color: lightgray;
   }
 

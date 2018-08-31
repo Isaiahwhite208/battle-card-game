@@ -7,6 +7,9 @@
           :key="hand.id"></card>
         <h4>Enemy: {{enemy.name}}</h4>
       </div>
+      <div>
+        <h4>Enemy: {{enemy.name}}</h4>
+      </div>
     </div>
   </div>
 </template>
