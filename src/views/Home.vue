@@ -6,17 +6,17 @@
       <button class="begin-btn" type="submit">Good Luck!</button>
     </form>
     <h1 v-if="gameOver">{{game.winner.name ? game.winner.name + ' Wins!' : game.winner}}</h1>
-    <enemyHand/>
+    <enemy/>
     <div>
       <button type="button" class="fight-btn" @click="fight()">Fight</button>
     </div>
-    <playerHand/>
+    <player/>
   </div>
 </template>
 
 <script>
-  import playerHand from '@/components/Player.vue'
-  import enemyHand from '@/components/Opponent.vue'
+  import Player from '@/components/Player.vue'
+  import Enemy from '@/components/Opponent.vue'
 
   export default {
     name: 'home',
@@ -37,8 +37,8 @@
       }
     },
     components: {
-      playerHand,
-      enemyHand,
+      Player,
+      Enemy,
     },
     computed: {
       game() {
