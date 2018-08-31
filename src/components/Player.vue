@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="loading" v-if="!player"></div>
+    <div v-if="!player"></div>
     <div class="player-hand" v-else>
       <h4>Player: {{player.name}}</h4>
       <div class="row content-center">

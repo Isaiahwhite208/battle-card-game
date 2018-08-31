@@ -1,11 +1,10 @@
 <template>
   <div>
-    <div class="loading" v-if="!enemy"></div>
+    <div v-if="!enemy"></div>
     <div class="enemy-hand" v-else>
       <div class="row content-center">
         <card class="card-size" v-for="hand in enemy.hand" :card="hand" :visible="hand.visible" @click.native="selectCard(hand.id)"
           :key="hand.id"></card>
-        <h4>Enemy: {{enemy.name}}</h4>
       </div>
       <div>
         <h4>Enemy: {{enemy.name}}</h4>
