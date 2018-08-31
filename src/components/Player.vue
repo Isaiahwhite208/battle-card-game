@@ -15,7 +15,7 @@
   import card from './Card.vue'
 
   export default {
-    name: "PlayerHand",
+    name: "PlayersCards",
     data() {
       return {};
     },
