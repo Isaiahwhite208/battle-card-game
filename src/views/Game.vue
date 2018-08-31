@@ -116,17 +116,17 @@
     color: black
   }
 
+  .card-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .card-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10%;
-  }
-
-  .card-stats {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   img {
