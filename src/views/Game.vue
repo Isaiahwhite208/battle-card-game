@@ -2,7 +2,7 @@
   <div class="game">
     <div class="opponent">
       <div class="opponentCards card" v-for="(opponentCard, index) in activeGame.players[1].hand" :key="index" @click='opponentCardId = opponentCard.id'>
-        <div v-bind:class="{'card-show': opponentCard.visible}" class="card-hide">
+        <div v-bind:class="{'card-hide': !opponentCard.visible}">
           <div class="card-info">
             <div class="card-stats">
               <p>
@@ -126,9 +126,12 @@
   .card-stats {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   img {
+    display: flex;
+    justify-content: center;
     max-width: 70%;
     height: auto;
   }

@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>Please input name</h1>
+    <h1>Welcome To Battle Cards</h1>
+    <h2>Player's name</h2>
     <form @submit.prevent="startGame($event)">
-      <input type="text" name="name" autocomplete="off" placeholder="Competitor"><br>
+      <input type="text" name="name" autocomplete="off" placeholder="Player"><br>
       <button class="new-game-button" type="submit">Submit</button>
     </form>
   </div>
@@ -23,15 +24,10 @@
 </script>
 
 <style scoped lang="scss">
-  h3 {
-    margin: 40px 0 0;
-  }
-
-  a {
-    color: #51ff00;
-  }
-
   input[type=text] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     border: none;
     border-bottom: 1px solid #5c5c5c;
@@ -42,19 +38,24 @@
   }
 
   input:focus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     outline: #5684c0;
   }
 
   .new-game-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 1rem;
     background-color: #424242;
-    border-radius: 12px;
-    border: 2px solid red;
+    border-radius: 10px;
+    border: 1px solid red;
     color: orangered;
-    padding: 15px 32px;
+    padding: 15px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
   }
 </style>

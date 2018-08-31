@@ -11,14 +11,17 @@
 <style>
   #nav {
     padding: 20px;
+    background-color: rgb(48, 48, 48);
   }
 
   #nav a {
     font-weight: bold;
-    color: #2c3e50;
+    background-color: rgb(48, 48, 48);
+    color: rgb(0, 140, 255);
   }
 
   #nav a.router-link-exact-active {
-    color: #3c11da;
+    background-color: rgb(48, 48, 48);
+    color: #ffffff;
   }
 </style>
