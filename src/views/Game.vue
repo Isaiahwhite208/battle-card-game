@@ -6,12 +6,12 @@
           <div class="card-info">
             <div class="card-stats">
               <p>
-                {{opponentCard.attack}}
+                Attack: {{opponentCard.attack}}
               </p>
             </div>
             <div class="card-stats">
               <p>
-                {{opponentCard.defense}}
+                Defence: {{opponentCard.defense}}
               </p>
             </div>
           </div>
@@ -20,7 +20,7 @@
           </div>
           <div class="card-stats">
             <p>
-              {{opponentCard.health}}
+              Current HP: {{opponentCard.health}}
             </p>
           </div>
         </div>
@@ -34,12 +34,12 @@
         <div class="card-info">
           <div class="card-stats">
             <p>
-              {{playerCard.attack}}
+              Attack: {{playerCard.attack}}
             </p>
           </div>
           <div class="card-stats">
             <p>
-              {{playerCard.defense}}
+              Defence: {{playerCard.defense}}
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@
         </div>
         <div class="card-stats">
           <p>
-            {{playerCard.health}}
+            Current HP: {{playerCard.health}}
           </p>
         </div>
       </div>
@@ -98,29 +98,29 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 2% 2% 2% 2%;
+    margin: 1%;
   }
 
   .opponent {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 2% 2% 2% 2%;
+    margin: 1%;
   }
 
   .card {
     flex-direction: column;
     justify-content: space-between;
-    margin: 2% 2% 2% 2%;
-    background-color: rgb(48, 53, 58);
-    border: 2px solid #42b983;
+    margin: 1%;
+    border: 2px solid gray;
+    color: black
   }
 
   .card-info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0% 10% 0% 10%;
+    padding: 10%;
   }
 
   .card-stats {

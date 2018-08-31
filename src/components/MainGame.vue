@@ -36,7 +36,7 @@
     border: none;
     border-bottom: 1px solid #5c5c5c;
     text-align: center;
-    color: white;
+    color: black;
     width: 25%;
     font-size: 2rem;
   }
@@ -47,10 +47,10 @@
 
   .new-game-button {
     margin-top: 1rem;
-    background-color: #070a0e;
+    background-color: #424242;
     border-radius: 12px;
-    border: 2px solid #f6fa06;
-    color: white;
+    border: 2px solid red;
+    color: orangered;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
