@@ -17,7 +17,6 @@
 <script>
   import Player from '@/components/Player.vue'
   import Enemy from '@/components/Opponent.vue'
-
   export default {
     name: 'home',
     data() {
