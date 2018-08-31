@@ -14,14 +14,14 @@
                 Defence: {{opponentCard.defense}}
               </p>
             </div>
+            <div class="card-stats">
+              <p>
+                Current HP: {{opponentCard.health}}
+              </p>
+            </div>
           </div>
           <div>
             <img :src=opponentCard.img alt="">
-          </div>
-          <div class="card-stats">
-            <p>
-              Current HP: {{opponentCard.health}}
-            </p>
           </div>
         </div>
       </div>
@@ -42,15 +42,16 @@
               Defence: {{playerCard.defense}}
             </p>
           </div>
+          <div class="card-stats">
+            <p>
+              Current HP: {{playerCard.health}}
+            </p>
+          </div>
         </div>
         <div>
           <img :src=playerCard.img alt="">
         </div>
-        <div class="card-stats">
-          <p>
-            Current HP: {{playerCard.health}}
-          </p>
-        </div>
+
       </div>
     </div>
   </div>
